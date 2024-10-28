@@ -22,38 +22,56 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
+            <a class="navbar-brand font-weight-bold" href="#">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#summary">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <h1 class="text-uppercase mb-0">My Portfolio</h1>
-            <p class="font-weight-light mb-0">This website was created temporarily for an assignment</p>
+    <header class="text-white text-center d-flex align-items-center justify-content-center position-relative" style="height: 100vh; background-image: url('img/header.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="overlay position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.5); z-index: 0;"></div>
+        <div class="container d-flex flex-column justify-content-center align-items-center position-relative" style="z-index: 1;">
+            <h1 class="text-uppercase mb-3">My Portfolio</h1>
+            <p class="font-weight-light mb-4">This website was created temporarily for an assignment</p>
+            <a href="#summary" class="btn btn-light btn-lg">Learn More</a>
         </div>
     </header>
-
-    <section id="summary" class="section bg-light">
+    
+    <section id="summary" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title text-center">Summarizing Statement</h2>
-            <p class="text-center">
-                I am a dedicated and skilled software developer currently studying Computer Systems Technology - Software Development at Mohawk College. With a strong foundation in web and programming languages, mobile application development, and database architecture, I am proficient in using various tools and frameworks to create efficient and innovative solutions. My experience includes project management, machine learning, technical writing, and cyber security, complemented by a cloud certification (AZ-900). I am passionate about leveraging my skills to contribute to impactful projects and continuously learning to stay updated with the latest industry trends.
-            </p>
+            <h2 class="text-center text-dark mb-4">Summarizing Statement</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-center text-muted">
+                        I am a dedicated and skilled software developer currently studying Computer Systems Technology - Software Development at Mohawk College. With a strong foundation in web and programming languages, mobile application development, and database architecture, I am proficient in using various tools and frameworks to create efficient and innovative solutions. My experience includes project management, machine learning, technical writing, and cyber security, complemented by a cloud certification (AZ-900). I am passionate about leveraging my skills to contribute to impactful projects and continuously learning to stay updated with the latest industry trends.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -197,12 +215,14 @@
         </div>
     </section>
 
-    <section id="resume" class="section bg-light">
+    <section id="resume" class="section bg-light py-5">
         <div class="container">
-            <h2 class="section-title text-center">Resume</h2>
-            <p class="text-center">
-                <a href="path/to/your-resume.pdf" class="btn btn-primary" target="_blank">View My Resume</a>
-            </p>
+            <h2 class="section-title text-center mb-5">Resume</h2>
+            
+            <div class="text-center mt-4">
+                <a href="resume/resume.pdf" class="btn btn-primary me-2" target="_blank">View My Resume</a>
+                <a href="resume/resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+            </div>
         </div>
     </section>
 
@@ -210,12 +230,13 @@
         <div class="container">
             <h2 class="section-title text-center">Contact Information</h2>
             <p class="text-center">Email: <a href="mailto:k.c@mohawkcollege.ca">k.c@mohawkcollege.ca</a></p>
+            <p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/kiet-anh-chau/" target="_blank">Kiet Anh Chau</a></p>
         </div>
     </section>
 
     <footer class="footer bg-dark text-white text-center">
         <div class="container">
-            <p class="mb-0">© 2023 My Portfolio</p>
+            <p class="mb-0">© 2024 Portfolio</p>
         </div>
     </footer>
 
